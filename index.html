@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -11,19 +15,25 @@
     <header id="header">
 
     <div class="logo">
+        <a href="#inicio">
     <img src="images/logo.png" alt="Sculptor Gym">
+        </a>
     <div class="logo-text">
         <span class="logo-white">SCULPTOR</span>
         <span class="logo-orange">GYM</span>
     </div>
     </div>
 
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Planes</a>
-        <a href="#">Galería</a>
-        <a href="#">Horarios</a>
-        <a href="#">Contacto</a>
+    <div class="menu-toggle">
+    <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <nav id="nav">
+    <a href="#inicio">Inicio</a>
+    <a href="#planes">Planes</a>
+    <a href="#horarios">Horarios</a>
+    <a href="#sedes">Sedes</a>
+    <a href="#contacto">Contacto</a>
     </nav>
 
     </header>
@@ -35,7 +45,7 @@
             <p>Entrena con equipos de última generación, planes personalizados y un ambiente diseñado para alcanzar tus objetivos.</p>
             <div class="hero-buttons">
                 <a href="#" class="btn">Únete Ahora</a>
-                <a href="#" class="btn-secondary">Ver Planes</a>
+                <a href="#planes" class="btn-secondary">Ver Planes</a>
             </div>
         </div>
     </section>
@@ -119,12 +129,12 @@
 
     <div class="schedule-row">
     <span>Sábado</span>
-    <span>7:00 AM - 7:00 PM</span>
+    <span>6:00 AM - 7:00 PM</span>
     </div>
 
     <div class="schedule-row">
-    <span>Domingo</span>
-    <span>8:00 AM - 12:00 PM</span>
+    <span>Domingo - Festivos</span>
+    <span>7:00 AM - 04:00 PM</span>
     </div>
 
     </div>
@@ -133,9 +143,10 @@
 
     <section id="sedes" class="locations">
 
-        <div class="locations-left">
-        
-            <h2>Nuestras Sedes</h2>
+        <div class="locations-container">
+            <h2 class="locations-title">Nuestras Sedes</h2>
+
+            <div class="locations-grid">
 
                 <div class="location-item active"
                 data-map="https://www.google.com/maps?q=Calle+40+Sur+73C-46+Bogota&output=embed">
@@ -184,8 +195,7 @@
                 <h3>Soacha Quintanares</h3>
                 <p>Calle 46 No 3 Este-43</p>
                 </div>
-
-                </div>
+            </div>
 
         <div class="locations-right">
             
@@ -193,10 +203,63 @@
                 id="gym-map"
                 src="https://www.google.com/maps?q=Calle+40+Sur+73C-46+Bogota&output=embed">
             </iframe>
-
+        </div>        
         </div>
 
     </section>
+
+    <footer id="contacto" class="footer">
+
+<div class="footer-logo">
+<img src="images/logo.png" alt="Sculptor Gym">
+<h2>SCULPTOR <span>GYM</span></h2>
+</div>
+<div class="footer-social">
+<h3>Síguenos</h3>
+<div class="social-icons">
+<a href="https://facebook.com" target="_blank">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+
+<a href="https://instagram.com" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://tiktok.com" target="_blank">
+<i class="fa-brands fa-tiktok"></i>
+</a>
+
+<a href="https://youtube.com" target="_blank">
+<i class="fa-brands fa-youtube"></i>
+</a>
+</div>
+</div>
+<div class="footer-links">
+
+<div class="footer-column">
+<h3>Navegación</h3>
+<a href="#">Inicio</a>
+<a href="#">Planes</a>
+<a href="#">Horarios</a>
+<a href="#">Sedes</a>
+</div>
+
+<div class="footer-column">
+<h3>Contacto</h3>
+<p>📞 +57 300 123 4567</p>
+<p>✉ contacto@sculptorgym.com</p>
+<p>📍 Bogotá, Colombia</p>
+</div>
+
+</div>
+<div class="footer-bottom">
+<p>© 2025 Sculptor Gym. Todos los derechos reservados.</p>
+</div>
+</footer>
+
+    <a href="https://wa.me/573132915299" class="whatsapp" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
     <script src="js/main.js"></script>
 
