@@ -1,267 +1,273 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Sculptor Gym | Gimnasio en Bogotá y Soacha</title>
+    <meta name="description" content="Sculptor Gym: 8 sedes en Bogotá y Soacha. Pesas, cardio, clases grupales y entrenador personal. Abierto desde las 5:00 a. m. Planes desde $29 al mes.">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:title" content="Sculptor Gym">
+    <meta property="og:description" content="8 sedes en Bogotá y Soacha. Planes desde $29 al mes.">
+    <meta property="og:image" content="images/logo.png">
+    <link rel="icon" href="images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Big+Shoulders+Display:wght@700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <header id="header">
 
-    <div class="logo">
-        <a href="#inicio">
-    <img src="images/logo.png" alt="Sculptor Gym">
-        </a>
-    <div class="logo-text">
-        <span class="logo-white">SCULPTOR</span>
-        <span class="logo-orange">GYM</span>
-    </div>
-    </div>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
 
-    <div class="menu-toggle">
-    <i class="fa-solid fa-bars"></i>
-    </div>
+    <header id="header" class="header">
+        <div class="header-inner">
+            <a href="#inicio" class="logo" aria-label="Sculptor Gym, ir al inicio">
+                <img src="images/logo.png" alt="" width="52" height="52">
+                <span class="logo-text">Sculptor <span>Gym</span></span>
+            </a>
 
-    <nav id="nav">
-    <a href="#inicio">Inicio</a>
-    <a href="#planes">Planes</a>
-    <a href="#horarios">Horarios</a>
-    <a href="#sedes">Sedes</a>
-    <a href="#contacto">Contacto</a>
-    </nav>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
 
+            <nav id="nav" class="nav" aria-label="Principal">
+                <a href="#planes">Planes</a>
+                <a href="#horarios">Horarios</a>
+                <a href="#sedes">Sedes</a>
+                <a href="#contacto">Contacto</a>
+                <a href="https://wa.me/573132915299?text=Hola%2C%20quiero%20inscribirme%20en%20Sculptor%20Gym" class="btn btn-primary nav-cta" target="_blank" rel="noopener">Inscríbete</a>
+            </nav>
+        </div>
     </header>
 
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <span class="hero-tag">SCULPTOR GYM</span>
-            <h1>Construye la mejor versión de ti</h1>
-            <p>Entrena con equipos de última generación, planes personalizados y un ambiente diseñado para alcanzar tus objetivos.</p>
-            <div class="hero-buttons">
-                <a href="#" class="btn">Únete Ahora</a>
-                <a href="#planes" class="btn-secondary">Ver Planes</a>
-            </div>
-        </div>
-    </section>
+    <main id="main">
 
-    <section id="planes" class="plans">
-
-        <h2>ÚNETE AHORA</h2>
-        
-        <p class="plans-subtitle">
-        Elige la membresía que mejor se adapte a tus objetivos.
-        </p>
-
-        <div class="plans-container">
-        
-        <div class="plan-card">
-        
-        <h3>Básico</h3>
-        
-        <div class="price">$29</div>
-        
-        <ul>
-        <li>✔ Área de pesas</li>
-        <li>✔ Cardio</li>
-        <li>✔ Vestidores</li>
-        </ul>
-
-        <a href="#" class="plan-btn">Elegir Plan</a>
-
-        </div>
-
-        <div class="plan-card featured">
-        
-        <h3>Premium</h3>
-        
-        <div class="price">$49</div>
-        
-        <ul>
-        <li>✔ Todo lo del Básico</li>
-        <li>✔ Clases grupales</li>
-        <li>✔ Entrenador básico</li>
-        </ul>
-
-        <a href="#" class="plan-btn">Elegir Plan</a>
-
-        </div>
-
-        <div class="plan-card">
-        
-        <h3>Elite</h3>
-        
-        <div class="price">$79</div>
-        
-        <ul>
-        <li>✔ Acceso completo</li>
-        <li>✔ Entrenador personal</li>
-        <li>✔ Plan nutricional</li>
-        </ul>
-
-        <a href="#" class="plan-btn">Elegir Plan</a>
-
-        </div>
-
-        </div>
-
-    </section>
-
-    <section id="horarios" class="schedule">
-
-    <h2>Horarios</h2>
-
-    <p class="schedule-subtitle">
-    Entrena cuando mejor te convenga.
-    </p>
-
-    <div class="schedule-table">
-
-    <div class="schedule-row">
-    <span>Lunes - Viernes</span>
-    <span>5:00 AM - 10:00 PM</span>
-    </div>
-
-    <div class="schedule-row">
-    <span>Sábado</span>
-    <span>6:00 AM - 7:00 PM</span>
-    </div>
-
-    <div class="schedule-row">
-    <span>Domingo - Festivos</span>
-    <span>7:00 AM - 04:00 PM</span>
-    </div>
-
-    </div>
-
-    </section>
-
-    <section id="sedes" class="locations">
-
-        <div class="locations-container">
-            <h2 class="locations-title">Nuestras Sedes</h2>
-
-            <div class="locations-grid">
-
-                <div class="location-item active"
-                data-map="https://www.google.com/maps?q=Calle+40+Sur+73C-46+Bogota&output=embed">
-                <h3>Kennedy</h3>
-                <p>Calle 40 Sur # 73C-46</p>
+        <section id="inicio" class="hero">
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <p class="status" data-open-status hidden>
+                        <span class="status-dot" aria-hidden="true"></span>
+                        <span data-open-status-text></span>
+                    </p>
+                    <h1>Construye la mejor versión de ti</h1>
+                    <p class="hero-lead">Equipos de última generación, planes personalizados y 8 sedes en Bogotá y Soacha para que entrenes cerca de casa.</p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/573132915299?text=Hola%2C%20quiero%20inscribirme%20en%20Sculptor%20Gym" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Inscríbete por WhatsApp
+                        </a>
+                        <a href="#sedes" class="btn btn-ghost btn-lg">Encuentra tu sede</a>
+                    </div>
                 </div>
 
-                <div class="location-item"
-                data-map="https://www.google.com/maps?q=Carrera+90A+135B-05+Bogota&output=embed">
-                <h3>Suba</h3>
-                <p>Carrera 90A # 135B-05</p>
-                </div>
-
-                <div class="location-item"
-                data-map="https://www.google.com/maps?q=Calle+57R+Bis+Sur+73B-54+Bogota&output=embed">
-                <h3>Perdomo</h3>
-                <p>Calle 57R Bis Sur # 73B-54</p>
-                </div>
-
-                <div class="location-item"
-                data-map="https://www.google.com/maps?q=Calle+8+Bis+72-76+Bogota&output=embed">
-                <h3>Castilla</h3>
-                <p>Calle 8 Bis # 72-76</p>
-                </div>
-
-                <div class="location-item"
-                data-map="https://www.google.com/maps?q=Calle+69B+Sur+Bosa+Bogota&output=embed">
-                <h3>Bosa Granada</h3>
-                <p>Calle 69B Sur</p>
-                </div>
-
-                <div class="location-item"
-                data-map="https://www.google.com/maps?q=Carrera+81+Sur+74B-38+Bogota&output=embed">
-                <h3>Bosa Maryland</h3>
-                <p>Carrera 81 Sur # 74B-38</p>
-                </div>
-
-                <div class="location-item"
-                data-map="https://www.google.com/maps?q=Transversal+38+Soacha+Indumil&output=embed">
-                <h3>Soacha Indumil</h3>
-                <p>Transversal 38</p>
-                </div>
-
-                <div class="location-item"
-                data-map="https://www.google.com/maps?q=Calle+46+3+Este-43+Soacha&output=embed">
-                <h3>Soacha Quintanares</h3>
-                <p>Calle 46 No 3 Este-43</p>
+                <div class="hero-emblem" aria-hidden="true">
+                    <svg class="gear" viewBox="0 0 200 200">
+                        <circle class="gear-teeth" cx="100" cy="100" r="91" />
+                        <circle class="gear-rim" cx="100" cy="100" r="81" />
+                    </svg>
+                    <img src="images/logo.png" alt="" width="225" height="225">
                 </div>
             </div>
+        </section>
 
-        <div class="locations-right">
-            
-            <iframe
-                id="gym-map"
-                src="https://www.google.com/maps?q=Calle+40+Sur+73C-46+Bogota&output=embed">
-            </iframe>
-        </div>        
-        </div>
+        <section id="planes" class="section plans">
+            <div class="container">
+                <header class="section-head">
+                    <h2>Elige tu plan</h2>
+                    <p>Sin letra pequeña. Escoge la membresía que va con tus objetivos y escríbenos para activarla.</p>
+                </header>
 
-    </section>
+                <div class="plans-grid">
+                    <article class="plan">
+                        <h3>Básico</h3>
+                        <p class="plan-desc">Para entrenar por tu cuenta.</p>
+                        <p class="price"><span class="price-currency">$</span>29<span class="price-period">/mes</span></p>
+                        <ul class="plan-features">
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Área de pesas</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Zona de cardio</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Vestidores</li>
+                        </ul>
+                        <a href="https://wa.me/573132915299?text=Hola%2C%20quiero%20el%20plan%20B%C3%A1sico" class="btn btn-outline" target="_blank" rel="noopener">Elegir Básico</a>
+                    </article>
+
+                    <article class="plan plan-featured">
+                        <p class="plan-badge">Recomendado</p>
+                        <h3>Premium</h3>
+                        <p class="plan-desc">Para entrenar con guía y en grupo.</p>
+                        <p class="price"><span class="price-currency">$</span>49<span class="price-period">/mes</span></p>
+                        <ul class="plan-features">
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Todo lo del Básico</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Clases grupales</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Asesoría de entrenador</li>
+                        </ul>
+                        <a href="https://wa.me/573132915299?text=Hola%2C%20quiero%20el%20plan%20Premium" class="btn btn-primary" target="_blank" rel="noopener">Elegir Premium</a>
+                    </article>
+
+                    <article class="plan">
+                        <h3>Elite</h3>
+                        <p class="plan-desc">Para resultados con acompañamiento total.</p>
+                        <p class="price"><span class="price-currency">$</span>79<span class="price-period">/mes</span></p>
+                        <ul class="plan-features">
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Todo lo del Premium</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Entrenador personal</li>
+                            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Plan nutricional</li>
+                        </ul>
+                        <a href="https://wa.me/573132915299?text=Hola%2C%20quiero%20el%20plan%20Elite" class="btn btn-outline" target="_blank" rel="noopener">Elegir Elite</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="horarios" class="section schedule">
+            <div class="container schedule-inner">
+                <header class="section-head">
+                    <h2>Horarios</h2>
+                    <p>Abrimos temprano para que entrenes antes del trabajo. Mismo horario en todas las sedes.</p>
+                    <p class="status status-light" data-open-status hidden>
+                        <span class="status-dot" aria-hidden="true"></span>
+                        <span data-open-status-text></span>
+                    </p>
+                </header>
+
+                <table class="schedule-table">
+                    <caption class="visually-hidden">Horario de atención</caption>
+                    <tbody>
+                        <tr data-days="1,2,3,4,5">
+                            <th scope="row">Lunes a viernes</th>
+                            <td>5:00 a. m. – 10:00 p. m.</td>
+                        </tr>
+                        <tr data-days="6">
+                            <th scope="row">Sábado</th>
+                            <td>6:00 a. m. – 7:00 p. m.</td>
+                        </tr>
+                        <tr data-days="0">
+                            <th scope="row">Domingos y festivos</th>
+                            <td>7:00 a. m. – 4:00 p. m.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="sedes" class="section locations">
+            <div class="container">
+                <header class="section-head">
+                    <h2>Nuestras sedes</h2>
+                    <p>Selecciona una sede para verla en el mapa y abrir la ruta.</p>
+                </header>
+
+                <div class="locations-layout">
+                    <div class="locations-list">
+                        <h3 class="locations-group">Bogotá</h3>
+                        <ul role="list">
+                            <li><button type="button" class="location is-active" aria-pressed="true" data-query="Calle 40 Sur 73C-46, Kennedy, Bogotá">
+                                <span class="location-name">Kennedy</span>
+                                <span class="location-address">Calle 40 Sur # 73C-46</span>
+                            </button></li>
+                            <li><button type="button" class="location" aria-pressed="false" data-query="Carrera 90A 135B-05, Suba, Bogotá">
+                                <span class="location-name">Suba</span>
+                                <span class="location-address">Carrera 90A # 135B-05</span>
+                            </button></li>
+                            <li><button type="button" class="location" aria-pressed="false" data-query="Calle 57R Bis Sur 73B-54, Bogotá">
+                                <span class="location-name">Perdomo</span>
+                                <span class="location-address">Calle 57R Bis Sur # 73B-54</span>
+                            </button></li>
+                            <li><button type="button" class="location" aria-pressed="false" data-query="Calle 8 Bis 72-76, Castilla, Bogotá">
+                                <span class="location-name">Castilla</span>
+                                <span class="location-address">Calle 8 Bis # 72-76</span>
+                            </button></li>
+                            <li><button type="button" class="location" aria-pressed="false" data-query="Calle 69B Sur, Bosa Granada, Bogotá">
+                                <span class="location-name">Bosa Granada</span>
+                                <span class="location-address">Calle 69B Sur</span>
+                            </button></li>
+                            <li><button type="button" class="location" aria-pressed="false" data-query="Carrera 81 Sur 74B-38, Bosa, Bogotá">
+                                <span class="location-name">Bosa Maryland</span>
+                                <span class="location-address">Carrera 81 Sur # 74B-38</span>
+                            </button></li>
+                        </ul>
+
+                        <h3 class="locations-group">Soacha</h3>
+                        <ul role="list">
+                            <li><button type="button" class="location" aria-pressed="false" data-query="Transversal 38, Indumil, Soacha">
+                                <span class="location-name">Indumil</span>
+                                <span class="location-address">Transversal 38</span>
+                            </button></li>
+                            <li><button type="button" class="location" aria-pressed="false" data-query="Calle 46 3 Este-43, Quintanares, Soacha">
+                                <span class="location-name">Quintanares</span>
+                                <span class="location-address">Calle 46 # 3 Este-43</span>
+                            </button></li>
+                        </ul>
+                    </div>
+
+                    <div class="map-panel">
+                        <iframe
+                            id="gym-map"
+                            title="Mapa de la sede seleccionada"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            src="https://www.google.com/maps?q=Calle+40+Sur+73C-46,+Kennedy,+Bogot%C3%A1&output=embed">
+                        </iframe>
+                        <div class="map-footer">
+                            <div>
+                                <p class="map-name" id="map-name">Kennedy</p>
+                                <p class="map-address" id="map-address">Calle 40 Sur # 73C-46</p>
+                            </div>
+                            <a id="map-directions" class="btn btn-primary" target="_blank" rel="noopener"
+                               href="https://www.google.com/maps/dir/?api=1&amp;destination=Calle%2040%20Sur%2073C-46%2C%20Kennedy%2C%20Bogot%C3%A1">
+                                <i class="fa-solid fa-location-arrow" aria-hidden="true"></i> Cómo llegar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <footer id="contacto" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="images/logo.png" alt="" width="88" height="88">
+                <p class="footer-name">Sculptor <span>Gym</span></p>
+                <p class="footer-tagline">Construye la mejor versión de ti.</p>
+            </div>
 
-<div class="footer-logo">
-<img src="images/logo.png" alt="Sculptor Gym">
-<h2>SCULPTOR <span>GYM</span></h2>
-</div>
-<div class="footer-social">
-<h3>Síguenos</h3>
-<div class="social-icons">
-<a href="https://facebook.com" target="_blank">
-<i class="fa-brands fa-facebook-f"></i>
-</a>
+            <nav class="footer-col" aria-label="Pie de página">
+                <h2>Navegación</h2>
+                <a href="#inicio">Inicio</a>
+                <a href="#planes">Planes</a>
+                <a href="#horarios">Horarios</a>
+                <a href="#sedes">Sedes</a>
+            </nav>
 
-<a href="https://instagram.com" target="_blank">
-<i class="fa-brands fa-instagram"></i>
-</a>
+            <div class="footer-col">
+                <h2>Contacto</h2>
+                <a href="tel:+573001234567"><i class="fa-solid fa-phone" aria-hidden="true"></i> +57 300 123 4567</a>
+                <a href="mailto:contacto@sculptorgym.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> contacto@sculptorgym.com</a>
+                <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Bogotá y Soacha, Colombia</p>
+            </div>
 
-<a href="https://tiktok.com" target="_blank">
-<i class="fa-brands fa-tiktok"></i>
-</a>
+            <div class="footer-col">
+                <h2>Síguenos</h2>
+                <div class="social">
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
 
-<a href="https://youtube.com" target="_blank">
-<i class="fa-brands fa-youtube"></i>
-</a>
-</div>
-</div>
-<div class="footer-links">
+        <div class="container footer-bottom">
+            <p>© <span id="year">2026</span> Sculptor Gym. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
-<div class="footer-column">
-<h3>Navegación</h3>
-<a href="#">Inicio</a>
-<a href="#">Planes</a>
-<a href="#">Horarios</a>
-<a href="#">Sedes</a>
-</div>
-
-<div class="footer-column">
-<h3>Contacto</h3>
-<p>📞 +57 300 123 4567</p>
-<p>✉ contacto@sculptorgym.com</p>
-<p>📍 Bogotá, Colombia</p>
-</div>
-
-</div>
-<div class="footer-bottom">
-<p>© 2025 Sculptor Gym. Todos los derechos reservados.</p>
-</div>
-</footer>
-
-    <a href="https://wa.me/573132915299" class="whatsapp" target="_blank">
-    <i class="fa-brands fa-whatsapp"></i>
+    <a href="https://wa.me/573132915299?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Sculptor%20Gym" class="whatsapp" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
     </a>
 
     <script src="js/main.js"></script>
-
 </body>
 </html>
